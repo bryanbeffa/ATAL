@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ATAL - Associazione Tiro Arco Luganese</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--css external-->
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/gallery.css">
+	<link rel="icon" href="css/img/logo.jpg" type="image/gif">
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<body onresize="setImageViewerSize()">
+	<!-- Image Viewer -->
+	<div id="imageViewer">
+		<img src="css/img/pagamento.jpg" id="imageView" >
+		<label id="imageTitle">titolo dell'immagine</label><br>
+		<label onclick="closeImageViewer()" id="close">X</label>
+	</div>
+
+	<!-- Menu -->
+	<nav id="menu">
+		<img src="css/img/logo.jpg" class="logo">
+		<ul>
+			<a href="#eventi"><li>News</li></a>
+			<a href="#meteo"><li>Meteo</li></a>
+			<a href="#societa"><li>Società</li></a>
+			<a href="#attivita"><li>Attività</li></a>
+			<a href="#corso"><li>Corsi</li></a>
+			<a href="#dove"><li>Dove siamo</li></a>
+			<a href="#galleria"><li>Galleria</li></a>
+			<a href="#contatti"><li>Contatti</li></a>
+			<a href="#link"><li>Link</li></a>
+		</ul>
+	</nav>
+	<!-- End Menu -->
+
+	<!-- Eventi -->
+	<div class="background" id="main">
+		Benvenuti
+	</div>
+	<div class="description-area" id="eventi">
+		<h1>Eventi</h1>
+		<nav id="menu-eventi">
+			<ul>
+				<li id="tuttiEventi">Tutti gli eventi</li>
+				<li id="fita">Gare FITA</li>
+				<li id="gare3d">Gare 3d</li>
+				<li id="fiere">Fiere</li>
+				<li id="manifestazioni">Manifestazioni</li>
+			</ul>
+		</nav>
+		
+		<!-- Evento faas-->
+		<div class="evento" id="eventoFita">
+			<table>
+				<tr>
+					<td id="year">2018</td>
+					<td rowspan="3" id="logo"></td>
+					<td class="description"><b>Calendario Gare Faas</b></td>
+					<td class="button" title="Sito web">1</td>
+				</tr>
+				<tr>
+					<td rowspan="2">-</td>
+					<td class="description">Calendario Gare Faas</td>
+					<td class="button" title="Sito web">2</td>
+				</tr>
+				<tr>
+					<td class="description">2018</td>
+				</tr>
+			</table>
+		</div>
+
+		<!-- Swiss Archery-->
+		<div class="evento" id="eventoSwiss">
+			<table>
+				<tr>
+					<td id="year">2018</td>
+					<td rowspan="3" id="logo"></td>
+					<td class="description"><b>Calendario Gare Swiss Archery</b></td>
+					<td class="button" title="Sito web">1</td>
+				</tr>
+				<tr>
+					<td rowspan="2">-</td>
+					<td class="description">Calendario Gare Swiss Archery</td>
+					<td class="button" title="Sito web">2</td>
+				</tr>
+				<tr>
+					<td class="description">2018</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<!-- End Eventi... -->
+
+	<!-- Meteo -->
+	<!-- weather widget start -->
+	<div class="background" id="meteo">
+		Meteo
+	</div>
+	<div class="description-area meteo">
+		<h1>Previsioni meteo Lugano</h1>
+		<p>Qui troverete le previsioni meteorologiche dei prossimi 7 giorni della città di Lugano</p>
+		<a class="weatherwidget-io" href="https://forecast7.com/it/46d008d95/lugano/" data-label_1="LUGANO" data-label_2="Meteo" data-theme="weather_one" >LUGANO Meteo</a>
+		<script>
+			!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+		</script>
+	</div>
+	<!-- weather widget end -->
+	<!-- End Meteo-->
+
+	<!-- Comitato, Iscrizione, Statuto -->
+	<div class="background"  id="societa">
+			Società
+	</div>
+	<div class="description-area">
+		<p>L'ATAL ha come scopo la promozione e l'esercizio del tiro con l'arco in tutte le sue forme, sia come attività agonistica che come attività ricreativa. L'ATAL non ha scopo di lucro.</p>
+		<h1>Comitato</h1>
+		<table id="comitato">
+			<tr>
+				<td>Presidente</td>
+				<td>Giovanna Aversa</td>
+			</tr>
+			<tr>
+				<td>Vicepresidente</td>
+				<td>Marco Piano</td>
+			</tr>
+			<tr>
+				<td>Monitore G&S</td>
+				<td>Oscar</td>
+			</tr>
+			<tr>
+				<td>Monitore G&S</td>
+				<td>Damiano</td>
+			</tr>
+		</table>
+
+		<h1>Iscrizione</h1>
+		<ul>
+			<li><a href="pdf/formulario_iscrizione_corso_base.pdf" target="_blank">Formulario per l'iscrizione alla Società e ai corsi</a></li>
+			<li><a href="pdf/tariffe_2017-2018.pdf" target="_blank">Riassunto quote sociali e tariffe dei corsi</a></li>
+		</ul>
+
+		<h1>Statuto, regolarmenti e vari</h1>
+		<ul>
+			<li><a href="pdf/Statuto.pdf" target="_blank">Statuto ATAL</a></li>
+			<li><a href="pdf/Norme campo.pdf" target="_blank">Regolamento per l'uso del campo di tiro</a></li>
+			<li><a href="pdf/Norme palestra.pdf" target="_blank">Regolamento per l'utilizzo della palestra</a></li>
+			<li><a href="pdf/autorizzazione pubblicazione foto internet.pdf" target="_blank">Autorizzazione relativa alla pubblicazione di fotografie sul sito internet</a></li>
+			<li><a href="pdf/Foglio_Segnapunti_ATAL.xlsx">Foglio segnapunti ATAL (Excel)</a></li>
+		</ul>
+	</div>
+	<!-- End Comitato... -->
+
+	<!-- Attività -->
+	<div class="background" id="attivita">
+			Attività
+	</div>
+	<div class="description-area">
+		<h1>Allenamenti</h1>
+		<p>I soci ATAL possono praticare il tiro con l'arco, sia come preparazione a gare che per scopo ricreativo, nelle infrastrutture (palestra e campo di tiro) a disposizione della Società.</p>
+
+		<p>Il venerdì sera presso la palestra delle scuole comunali di Lugano-Besso, durante il resto della settimana presso il campo esterno a Savosa. 
+		</p>
+
+		<p>Vedi <a href="#">Calendario palestra </a>.</p>
+
+		<h1 id="corso">Corsi</h1>
+
+		<div id="divCorsi">
+			<p>L'ATAL organizza periodicamente corsi introduttivi aperti agli adulti ed ai giovani (età minima 10 anni). L'età minima è dovuta al fatto che tra i 6 e i 10 anni la struttura scheletrica sta passando una fase di sviluppo e quindi non è ancora adeguatamente conformata alla nostra disciplina sportiva, che impone movimenti con assetti statici e ripetuti.</p>
+
+			<!-- Corso principianti sabato-->
+			<div class="corsi">
+				<h1>Corso Base Principianti</h1> 
+				<p>Corso principianti della durata di 5 lezioni, presso la palestra di 	Lugano/Besso.</p>
+
+				<table>
+					<tr>
+						<td>Sabato</td>
+						<td>19.01.2019</td>
+						<td>10:00 / 12:00</td>
+					</tr>
+					<tr>
+						<td>Sabato</td>
+						<td>26.01.2019</td>
+						<td>10:00 / 12:00</td>
+					</tr>
+					<tr>
+						<td>Sabato</td>
+						<td>02.02.2019</td>
+						<td>10:00 / 12:00</td>
+					</tr>
+					<tr>
+						<td>Sabato</td>
+						<td>09.02.2019</td>
+						<td>10:00 / 12:00</td>
+					</tr>
+				</table>
+				<h3>
+					Le iscrizioni sono aperte
+					<img src="css/img/iscrizioni/aperte.png" id="iscrizioni">
+				</h3>
+			</div>
+		</div>
+
+		<p>Il materiale viene messo a disposizione dalla Società per la durata del corso.</p>
+
+		<p>Per ulteriori informazioni scrivere a  <a href="mailto:info@atal-arco.ch">info@atal-arco.ch</a> .</p>
+
+		<h1>Giornate speciali</h1>
+		<p>La Società organizza giornate informative, promozionali e ricreative su incarico di scuole ed altri enti.</p>
+	</div>
+	<!-- End attività -->
+
+	<!-- Dove siamo -->
+	<div class="background" id="dove">
+			Dove siamo
+	</div>
+	<div class="description-area">
+		<h1>Indoor</h1>
+		<p>Durante tutto l'anno scolastico i soci ATAL possono usufruire della palestra delle scuole comunali di Lugano a Besso.</p>
+
+		<p>Nella palestra vengono tenuti i corsi per principianti e l'allenamento per il tiro indoor a 18 metri.</p>
+
+		<h1>Outdoor</h1>
+		<p>Campo esterno presso il centro sportivo Valgersa.</p>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m13!1m11!1m3!1d359.97626298823576!2d8.939541927633117!3d46.01684083481382!2m2!1f0!2f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sch!4v1540031822137" width="600" height="450" frameborder="0" style="border:0" allowfullscreen id="valgersa"></iframe>
+	</div>
+	<!-- End dove siamo -->
+
+	<!-- Galleria -->
+	<div class="background" id="galleria">
+			Galleria
+	</div>
+	<div class="description-area">
+		<select>
+			<option class="buttons" onclick="showGallery(0)">Chiasso indoor 2016</option>
+			<option class="buttons" onclick="showGallery(1)">Gara 3d Mte. Ceneri 2016</option>
+			<option class="buttons" onclick="showGallery(2)">Gara 3d Personico 2016</option>
+			<option class="buttons" onclick="showGallery(3)">Sportissima 2016</option>
+			<option class="buttons" onclick="showGallery(4)">Corteo 1° agosto 2016</option>
+			<option class="buttons" onclick="showGallery(5)">Chiasso Indoor 2015</option>
+			<option class="buttons" onclick="showGallery(6)">Gara 3d Mte. Ceneri 2015</option>
+			<option class="buttons" onclick="showGallery(7)">Sportissima 2015</option>
+			<option class="buttons" onclick="showGallery(8)">Tiro 70m campo esterno 2015</option>
+			<option class="buttons" onclick="showGallery(9)">Uscita Motto Rosso 10.05.2015</option>
+			<option class="buttons" onclick="showGallery(10)">Gara FAAS Ghirone 10.2014</option>
+			<option class="buttons" onclick="showGallery(11)">Sportissima 2014</option>
+			<option class="buttons" onclick="showGallery(12)">Campo esterno Agosto 2014</option>
+		</select> 
+
+		<div class="gallery">
+			<img onclick="viewImage('css/img/chiasso_indoor_2016/chiasso_2016_01.jpg', 'Chiasso Indoor 2016')" class="images" src="css/img/chiasso_indoor_2016/chiasso_2016_01.jpg">
+			<img onclick="viewImage('css/img/chiasso_indoor_2016/chiasso_2016_02.jpg', 'Chiasso Indoor 2016')" class="images" src="css/img/chiasso_indoor_2016/chiasso_2016_02.jpg">
+			<img onclick="viewImage('css/img/chiasso_indoor_2016/chiasso_2016_03.jpg', 'Chiasso Indoor 2016')" class="images" src="css/img/chiasso_indoor_2016/chiasso_2016_03.jpg">
+			<img onclick="viewImage('css/img/chiasso_indoor_2016/chiasso_2016_04.jpg', 'Chiasso Indoor 2016')" class="images" src="css/img/chiasso_indoor_2016/chiasso_2016_04.jpg">
+		</div>
+
+		<div class="gallery">
+			<img onclick="viewImage('css/img/ceneri_2016/ceneri_2016_01.jpg', 'Ceneri 2016')" class="images" src="css/img/ceneri_2016/ceneri_2016_01.jpg">
+		</div>
+
+		<div class="gallery">
+			<img onclick="viewImage('css/img/personico_2016_02/personico_2016_02_01.jpg', 'Personico 2 2016')" class="images" src="css/img/personico_2016_02/personico_2016_02_01.jpg">
+			<img onclick="viewImage('css/img/personico_2016_02/personico_2016_02_02.jpg', 'Personico 2 2016')" class="images" src="css/img/personico_2016_02/personico_2016_02_02.jpg">
+			<img onclick="viewImage('css/img/personico_2016_02/personico_2016_02_03.jpg', 'Personico 2 2016')" class="images" src="css/img/personico_2016_02/personico_2016_02_03.jpg">
+		</div>
+	
+		<div class="gallery">
+			<img onclick="viewImage('css/img/sportissima_2016/sport_2016_1.jpg', 'Sportissima 2016')" class="images" src="css/img/sportissima_2016/sport_2016_1.jpg">
+			<img onclick="viewImage('css/img/sportissima_2016/sport_2016_2.jpg', 'Sportissima 2016')" class="images" src="css/img/sportissima_2016/sport_2016_2.jpg">
+			<img onclick="viewImage('css/img/sportissima_2016/sport_2016_3.jpg', 'Sportissima 2016')" class="images" src="css/img/sportissima_2016/sport_2016_3.jpg">
+			<img onclick="viewImage('css/img/sportissima_2016/sport_2016_4.jpg', 'Sportissima 2016')" class="images" src="css/img/sportissima_2016/sport_2016_4.jpg">
+			<img onclick="viewImage('css/img/sportissima_2016/sport_2016_5.jpg', 'Sportissima 2016')" class="images" src="css/img/sportissima_2016/sport_2016_5.jpg">
+			<img onclick="viewImage('css/img/sportissima_2016/sport_2016_6.jpg', 'Sportissima 2016')" class="images" src="css/img/sportissima_2016/sport_2016_6.jpg">
+			<img onclick="viewImage('css/img/sportissima_2016/sport_2016_7.jpg', 'Sportissima 2016')" class="images" src="css/img/sportissima_2016/sport_2016_7.jpg">
+			<img onclick="viewImage('css/img/sportissima_2016/sport_2016_8.jpg', 'Sportissima 2016')" class="images" src="css/img/sportissima_2016/sport_2016_8.jpg">
+			<img onclick="viewImage('css/img/sportissima_2016/sport_2016_9.jpg', 'Sportissima 2016')" class="images" src="css/img/sportissima_2016/sport_2016_9.jpg">
+		</div>
+	
+		<div class="gallery">
+			<img onclick="viewImage('css/img/1_agosto_2016/1_agosto_2016_01.jpg', 'Primo agosto 2016 corteo')" class="images" src="css/img/1_agosto_2016/1_agosto_2016_01.jpg">
+			<img onclick="viewImage('css/img/1_agosto_2016/1_agosto_2016_02.jpg', 'Primo agosto 2016 corteo')" class="images" src="css/img/1_agosto_2016/1_agosto_2016_02.jpg">
+			<img onclick="viewImage('css/img/1_agosto_2016/1_agosto_2016_03.jpg', 'Primo agosto 2016 corteo')" class="images" src="css/img/1_agosto_2016/1_agosto_2016_03.jpg">
+			<img onclick="viewImage('css/img/1_agosto_2016/1_agosto_2016_04.jpg', 'Primo agosto 2016 corteo')" class="images" src="css/img/1_agosto_2016/1_agosto_2016_04.jpg">
+			<img onclick="viewImage('css/img/1_agosto_2016/1_agosto_2016_05.jpg', 'Primo agosto 2016 corteo')" class="images" src="css/img/1_agosto_2016/1_agosto_2016_05.jpg">
+			<img onclick="viewImage('css/img/1_agosto_2016/1_agosto_2016_06.jpg', 'Primo agosto 2016 corteo')" class="images" src="css/img/1_agosto_2016/1_agosto_2016_06.jpg">
+		</div>
+	
+		<div class="gallery">
+			<img class="images" src="css/img/prova1.jpg">
+		</div>
+	
+		<div class="gallery">
+			<img class="images" src="css/img/prova1.jpg">
+		</div>
+	
+		<div class="gallery">
+			<img class="images" src="css/img/prova1.jpg">
+		</div>
+	
+		<div class="gallery">
+			<img class="images" src="css/img/prova1.jpg">
+		</div>
+	
+		<div class="gallery">
+			<img class="images" src="css/img/prova1.jpg">
+		</div>
+	
+		<div class="gallery">
+			<img class="images" src="css/img/prova1.jpg">
+		</div>
+	
+		<div class="gallery">
+			<img class="images" src="css/img/prova1.jpg">
+		</div>
+	
+		<div class="gallery">
+			<img class="images" src="css/img/prova1.jpg">
+		</div>
+
+
+	</div>
+	<!-- End galleria -->
+
+	<!-- Contatti -->
+	<div class="background" id="contatti">
+			Contatti
+	</div>
+	<div class="description-area">
+		<h1>Posta Elettronica</h1>
+		<p><a href="mailto:info@atal-arco">info@atal-arco.ch</a></p>
+
+		<h1>Pagamento</h1>
+
+		<table id="pagamento">
+			<tr>
+				<td>Intestazione:</td>
+				<td>A.T.A.L</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>Associazione Tiro Arco Lugano</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>6900 Lugano</td>
+			</tr>
+			<tr>
+				<td>Nr. Conto:</td>
+				<td>69-441-3</td>
+			</tr>
+			<tr>
+				<td>IBAN:</td>
+				<td>CH59 0900 0000 6900 0441 3</td>
+			</tr>
+		</table>
+		<img src="css/img/pagamento.jpg" id="pagamentoImg" onclick="viewImage('css/img/pagamento.jpg', 'Cedola versamento postale')">
+	</div>
+	<!-- End Contatti  -->
+
+	<!-- Link -->
+	<div class="background" id="link">
+			Link
+	</div>
+	<div class="description-area">
+		<h1>Tecnica e materiale di tiro</h1>
+		<ul>
+			<li><a href="#">Easton Arrow Tuning and Maintenance Guide</a></li>
+			<li><a href="#">Easton Arrow Tuning and Maintenance Guide (tradotto in italiano)</a></li>
+			<li><a href="#">Manuale tecnico di base per l’arciere FIARC</a></li>
+		</ul>
+
+		<h1>Società di tiro con l'arco in Ticino</h1>
+		<ul>
+			<li><a href="#"><b>ATAL Lugano</b></a></li>
+			<li><a href="#">Sporting <b>Chiasso</b></a></li>
+			<li>Arcieri Club <b>Locarno</b></li>
+			<li>Arcieri del Dügn <b>Magadino</b></li>
+			<li><a href="#">ArBe Arcieri <b>Bellinzona</b></a></li>
+			<li><a href="#">Società Arcieri <b>Lodrino</b></a></li>
+			<li><a href="#">Arcieri della foresta <b>Lugano</b></a></li>
+			<li><a href="#">Società di Tiro con l'Arco <b>Mendrisio</b></a></li>
+		</ul>
+
+		<h1>Associazioni nazionali svizzere e italiane</h1>
+		<ul>
+			<li><a href="#">ASTA - Swiss Archery Association</a></li>
+			<li><a href="#">FAAS - Field Archery Association Switzerland</a></li>
+			<li><a href="#">FITARCO - Federazione Italiana Tiro con l'Arco</a></li>
+			<li><a href="#">FIARC - Federazione Italiana Arcieri Tiro di Campagna</a></li>
+		</ul>
+	</div>
+	<!-- End Link -->
+
+	<!-- Footer -->
+	<footer>
+		<p>© 2014 Associazione Tiro Arco Luganese</p>
+	</footer>
+	<!-- End Footer -->
+
+	<script type="text/javascript" src="js/gallery.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

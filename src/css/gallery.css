@@ -1,0 +1,131 @@
+@media only screen and (min-width: 1000px) {
+	.gallery{
+	  width: 100%;
+	  text-align: center;
+	  border-left: 0.1vw solid rgb(0, 255, 201);
+	}
+	
+	.images{
+	  width: 30%;
+	  margin: 1vw 1vw;
+	  max-height: 20vw;
+	  border-radius: 0.3vw;
+	  border: none;
+	}
+	
+	.buttons{
+		border: none;
+		padding: 0.4vw;
+		border-radius: 0.2vw;
+		font-size: 1vw;
+		height: 3vw;
+	}
+	
+	select{
+		width: 20%;
+		margin-bottom: 2vw;
+		text-align: center;
+		margin-left: 40%;
+		border: 0.1vw solid;
+		border-radius: 0.3vw;
+	}
+	
+	.images:hover{
+		box-shadow: 0.8vw 0.8vw 0.8vw rgba(0, 0, 0, 0.4);
+	}
+	
+	#imageViewer{
+		position: fixed;
+		background-color: rgba(0,0,0, 0.9);
+		display: block;
+		width: 100%;
+		height: auto;
+		text-align: center;
+	}
+	
+	
+	#close{
+	    color: rgba(255, 255, 255, 0.7);
+	    cursor: pointer;
+	    border-radius: 50%;
+	    text-align: center;
+		font-weight: bold;
+	}
+	
+	#imageView{
+		max-height: 80%;
+		width: auto;
+		margin: auto;
+		display: none;
+	}
+	
+	#imageTitle{
+		color: white;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.gallery{
+	  width: 100%;
+	  text-align: center;
+	  border-left: 0.1vw solid rgb(0, 255, 201);
+	}
+	
+	.images{
+	  width: 90%;
+	  height: auto;
+	  margin: 1vw 1vw;
+	  border-radius: 0.3vw;
+	  border: none;
+	}
+	
+	.buttons{
+		border: none;
+		padding: 0.4vw;
+		border-radius: 0.2vw;
+		font-size: 1vw;
+		height: 3vw;
+	}
+	
+	select{
+		width: 20%;
+		margin-bottom: 2vw;
+		text-align: center;
+		margin-left: 40%;
+		border: 0.1vw solid;
+		border-radius: 0.3vw;
+	}
+
+	.images:hover{
+		box-shadow: 0.8vw 0.8vw 0.8vw rgba(0, 0, 0, 0.4);
+	}
+
+	#imageViewer{
+		position: fixed;
+		background-color: rgba(0,0,0, 0.9);
+		display: block;
+		width: 100%;
+		height: auto;
+		text-align: center;
+	}
+	
+	
+	#close{
+	    color: rgba(255, 255, 255, 0.7);
+	    cursor: pointer;
+	    border-radius: 50%;
+	    text-align: center;
+		font-weight: bold;
+	}
+	
+	#imageView{
+		max-height: 80%;
+		width: auto;
+		margin: auto;
+		display: none;
+	}
+	
+	#imageTitle{
+		color: white;
+	}
+}

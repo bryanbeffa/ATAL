@@ -1,0 +1,486 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'PT Sans', sans-serif;
+}
+
+/*@media only screen and (min-width: 1000px) {*/
+    body {
+    	background-size: 100% auto;
+    	background-repeat: no-repeat;
+    	background-attachment: fixed;
+        overflow-x: hidden;
+    }
+
+    #menu{
+    	position: fixed;
+    	width: 100%;
+    	background-color: black;
+    }
+
+    #menu li{
+    	float: left;
+    	list-style-type: none;
+    	padding: 1vw 2vw;
+    	color: white;
+    	font-size: 1.2em;
+    	transition: background-color 0.5s;
+    }
+
+    #menu li:hover{
+    	background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    a{
+    	text-decoration: none;
+    }
+
+    .description-area{
+    	background-color: white;
+    	padding-left: 10%;
+    	padding-top: 3vw;
+    	padding-bottom: 3vw;
+    	font-size: 1.2em;
+        clear: left;
+    }
+
+    .description-area h1{
+    	margin: 2vw 0vw 1vw;
+    	font-size: 1.5em;
+    	color: rgb(30, 40, 50);
+    }
+
+    #comitato{
+    	border-collapse: collapse;
+    	border-left: 0.1vw solid rgb(0, 255, 201);
+    }
+
+    #comitato td{
+    	padding: 0.2vw 3vw;
+    }
+
+    #comitato tr:hover{
+    	background-color: rgba(0, 255, 201, 0.1);
+    }
+
+    .description-area ul{
+    	color: rgb(107, 139, 255);
+    	padding: 0.4vw 3vw;
+    	border-left: 0.1vw solid rgb(0, 255, 201);
+    }
+
+    .description-area li {
+    	list-style-type: none;
+    	color: rgb(30, 40, 50);
+    	padding: 0.2vw 0vw;
+    }
+
+    .description-area p{
+    	border-left: 0.1vw solid rgb(0, 255, 201);
+    	padding: 0.5vw 3vw;
+    }
+
+    .background{
+        padding: 250px 0px;
+        font-size: 100px;
+        text-align: center;
+        text-shadow: 5px 5px 5px black;
+        color: white;
+    }
+
+    #main{
+        background: url("img/bg5.jpg");
+        background-color: black;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+    }
+
+    #societa{
+        background: url("img/bg1.jpg");
+        background-color: black;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+    }
+
+    #attivita{
+        background: url("img/bg2.jpg");
+        background-color: black;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+    }       
+
+    #dove{
+        background: url("img/bg3.jpeg");
+        background-color: black;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+    }
+
+    #galleria{
+        background: url("img/bg4.jpeg");
+        background-color: black;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+    } 
+
+    #contatti{
+        background: url("img/bg6.jpg");
+        background-color: black;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+    }
+
+    #link{
+        background: url("img/bg7.jpg");
+        background-color: black;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+    }
+
+    #meteo{
+        background: url("img/bg8.jpg");
+        background-color: black;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+    }
+
+    .meteo{
+        border-left: 0.1vw solid rgb(0, 255, 201);
+        width: 80%;
+    }
+
+    #description-area li a:hover{
+    	color: rgb(30, 40, 230);
+    	border-bottom: 0.1vw solid rgb(30, 40, 230);
+    }
+
+    #description-area li a{
+    	color: rgb(30, 40, 160);
+    }
+
+    footer{
+    	text-align: center;
+    	background-color: rgb(20, 20, 20);
+    	color: rgb(130, 130, 130);
+    }
+
+    footer p{
+    	padding: 5vw;
+    	font-size: 130%;
+    }
+
+    #pagamento{
+    	border-collapse: collapse;
+    	border-left: 0.1vw solid rgb(0, 255, 201);
+    }
+
+    #pagamento td{
+    	padding: 0.2vw 3vw;
+    }
+
+    .corsi table{
+    	border-collapse: collapse;
+    	width: 100%;
+    }
+
+    .corsi td{
+    	width: 33%;
+        padding: 0.3vw 0vw;
+    }
+
+    .corsi{
+    	text-align: center;
+    	width: 60%;
+    	background-color: rgba(0, 255, 201, 0.2);
+    	margin-left: 3vw;
+    }
+
+    #divCorsi p {
+    	text-align: left;    	
+    	border: none;
+    }
+
+    #divCorsi{
+    	border-left: 0.1vw solid rgb(0, 255, 201);
+    }
+
+    #pagamentoImg{
+        width: 40%;
+        margin: 2vw 0vw;
+    }
+
+    .logo{
+        float: left;
+        height: 3vw;
+        text-align: right;
+        margin: 0vw 1vw;
+    }
+
+    .background li{
+        list-style-type: none;
+        float: left;
+        font-size: 50%;
+        width: 24.9%;
+        text-align: center;
+        border: 0.1vw solid;
+        border-left: none;
+        padding: 0.5vw 0vw;
+        background-color: rgba(0, 200, 255, 0.3);
+    }
+
+    .background a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .background li:hover{
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+    }
+
+    .background h1{
+        padding: 3vw 0vw;
+        text-align: center;
+    }
+
+    #menu-eventi nav{
+        margin: auto;
+    }
+
+    #menu-eventi li{
+        float: left;
+        padding: 0vw 1vw;
+        border-bottom: 0.1vw rgba(0, 200, 255, 0) solid;
+    }
+
+    #menu-eventi li:hover{
+        border-bottom: 0.1vw rgba(0, 200, 255, 0.3) solid;
+        cursor: pointer;
+    }
+
+    .evento table{
+        clear: both;
+        border: 0.1vw solid;
+        border-collapse: collapse;
+        width: 90%;
+        border: auto;
+        height: 150px;
+        box-shadow: -1px -2px 2px rgba(0, 0, 0, 0.6);
+        min-width: 600px;
+        font-size: 1.7em;        
+        margin-top: 30px;
+        background-color: rgba(0, 200, 255, 0.1);
+    }
+
+    .evento td{
+        text-align: center;
+    }
+
+    .evento #logo{
+        width: 150px;
+        background-image: url("img/logo/faas_logo.jpg");
+        background-size: 100% 100%;
+        border: 1px solid;
+    }
+
+    .evento .description{
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    .evento #year{
+        background-color: rgba(0, 255, 201, 0.5);
+        border-bottom: 1px solid;
+        width: 200px;
+    }
+
+    .evento .button{
+        width: 40px;
+        background-color: rgba(0, 255, 201, 0.3);
+        border-left: 1px solid;
+        cursor: pointer;
+    }
+
+    #eventi{
+        min-height: 300px;
+    }
+
+    #iscrizioni{
+        width: 200px;
+        
+
+display:table-cell;
+vertical-align:middle;
+
+
+    }
+}
+
+/*@media only screen and (max-width: 1000px) {
+    body {
+        background-image: url("img/prova1.jpg");
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        overflow-x: hidden;
+    }
+
+    #menu{
+        position: fixed;
+        width: 100%;
+        background-color: black;
+    }
+
+    #menu li{
+        float: left;
+        list-style-type: none;
+        padding: 1vw 2vw;
+        color: white;
+        font-size: 1.2em;
+        transition: background-color 0.5s;
+    }
+
+    #menu li:hover{
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .description-area{
+        background-color: white;
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+        font-size: 1.2em;
+    }
+
+    .description-area h1{
+        margin: 2vw 0vw 1vw;
+        font-size: 1.5em;
+        color: rgb(30, 40, 50);
+        margin-left: 3vw;
+    }
+
+    #comitato{
+        border-collapse: collapse;
+        border-left: 0.1vw solid rgb(0, 255, 201);
+    }
+
+    #comitato td{
+        padding: 0.2vw 3vw;
+    }
+
+    #comitato tr:hover{
+        background-color: rgba(0, 255, 201, 0.1);
+    }
+
+    .description-area ul{
+        color: rgb(107, 139, 255);
+        padding: 0.4vw 3vw;
+        border-left: 0.1vw solid rgb(0, 255, 201);
+    }
+
+    .description-area li {
+        list-style-type: none;
+        color: rgb(30, 40, 50);
+        padding: 0.2vw 0vw;
+    }
+
+    .description-area p{
+        border-left: 0.1vw solid rgb(0, 255, 201);
+        padding: 0.5vw 3vw;
+    }
+
+    .background{
+        text-align: center;
+        background-color: rgba(0,0,0,0);
+        padding: 10vw;
+        font-size: 300%;
+    }
+
+    #description-area li a:hover{
+        color: rgb(30, 40, 230);
+        border-bottom: 0.1vw solid rgb(30, 40, 230);
+    }
+
+    #description-area li a{
+        color: rgb(30, 40, 160);
+    }
+
+    footer{
+        text-align: center;
+        background-color: rgb(20, 20, 20);
+        color: rgb(130, 130, 130);
+    }
+
+    footer p{
+        padding: 5vw;
+        font-size: 130%;
+    }
+
+    #pagamento{
+        border-collapse: collapse;
+        border-left: 0.1vw solid rgb(0, 255, 201);
+    }
+
+    #pagamento td{
+        padding: 0.2vw 3vw;
+    }
+
+    .corsi table{
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .corsi td{
+        width: 33%;
+    }
+
+    .corsi{
+        text-align: center;
+        width: 100%;
+        background-color: rgba(0, 255, 201, 0.2);
+        margin-left: 3vw;
+    }
+
+    #divCorsi p {
+        text-align: left;       
+        border: none;
+    }
+
+    #divCorsi{
+        border-left: 0.1vw solid rgb(0, 255, 201);
+    }
+
+    .logo{
+        clear: both;
+        height: 3vw;
+        text-align: right;
+    }
+
+    #pagamentoImg{
+        width: 100%;
+        margin: auto;
+    }
+
+    #valgersa{
+        margin-left: 3vw;
+    }
+}//
