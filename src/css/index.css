@@ -16,6 +16,7 @@
     	position: fixed;
     	width: 100%;
     	background-color: black;
+    	z-index: 1;
     }
 
     #menu li{
@@ -163,6 +164,7 @@
     .meteo{
         border-left: 0.1vw solid rgb(0, 255, 201);
         width: 80%;
+        z-index: 0;
     }
 
     #description-area li a:hover{
