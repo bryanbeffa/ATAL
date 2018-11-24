@@ -259,14 +259,10 @@
         text-align: center;
     }
 
-    #menu-eventi nav{
-        margin: auto;
-    }
-
     #menu-eventi li{
-        float: left;
         padding: 0vw 1vw;
         border-bottom: 0.1vw rgba(0, 200, 255, 0) solid;
+        display: inline;
     }
 
     #menu-eventi li:hover{
@@ -276,12 +272,11 @@
 
     .evento table{
         clear: both;
-        border: 0.1vw solid;
         border-collapse: collapse;
         width: 90%;
         border: auto;
         height: 150px;
-        box-shadow: -1px -2px 2px rgba(0, 0, 0, 0.6);
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7);
         min-width: 600px;
         font-size: 1.7em;        
         margin-top: 30px;
@@ -292,11 +287,22 @@
         text-align: center;
     }
 
-    .evento #logo{
+    #faas{
         width: 150px;
         background-image: url("img/logo/faas_logo.jpg");
         background-size: 100% 100%;
-        border: 1px solid;
+    }
+
+    #swiss-archery{
+        width: 150px;
+        background-image: url("img/logo/swiss_archery_logo.jpg");
+        background-size: 100% 100%;
+    }
+
+    #insubria{
+        width: 150px;
+        background-image: url("img/logo/insubria_logo.jpg");
+        background-size: 100% 100%;
     }
 
     .evento .description{
@@ -321,14 +327,16 @@
         min-height: 300px;
     }
 
+    #eventi ul{
+        border: none;
+        text-align: center;
+        width: 83%;
+    }
+
     #iscrizioni{
         width: 200px;
-        
-
-display:table-cell;
-vertical-align:middle;
-
-
+        display:table-cell;
+        vertical-align:middle;
     }
 }
 
